@@ -15,11 +15,11 @@ public class OrderApp {
         MemberService memberService = appConfig.memberService();
         OrderService orderService = appConfig.orderService();
 
-        long memberId = 1L;
-        Member member = new Member(memberId, "memberA", Grade.BASIC);
+        long memberId = 2L;
+        Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
 
-        Order order = orderService.createOrder(memberId,"item1",1000);
+        Order order = orderService.createOrder(memberId,"item1",2000);
 
         System.out.println(order);
     }

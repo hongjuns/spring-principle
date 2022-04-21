@@ -18,7 +18,6 @@ public class OrderServiceTest {
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();
         orderService = appConfig.orderService();
-
     }
 
     @Test

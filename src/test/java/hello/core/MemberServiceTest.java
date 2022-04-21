@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class MemberServiceTest {
     MemberService memberService;
+
     @BeforeEach
     public void beforeEach() {
         AppConfig appConfig = new AppConfig();
